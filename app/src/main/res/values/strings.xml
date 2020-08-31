@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Image Search App</string>
+    <string name="check_internet_connection">Check Internet Connection</string>
+</resources>

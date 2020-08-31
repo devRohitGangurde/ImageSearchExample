@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/root_view_movie_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@color/colorBlack">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_view_user_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_person" />
+
+            </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10sp"
+                    android:visibility="visible">
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_txt_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_margin="20dp"
+                        android:drawableTint="@android:color/black"
+                        android:hint="Add your comment for image! "
+                        android:maxLines="5" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_save_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="20dp"
+                        android:background="@color/colorBlack"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:drawableTint="@android:color/white"
+                        android:text="Add Comment" />
+                </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
